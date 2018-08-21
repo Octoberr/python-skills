@@ -15,7 +15,7 @@ a = ["python", "is", "awesome"]
 print(" ".join(a))
 ```
 
-###查找列表中频率最高的值
+### 查找列表中频率最高的值
 ```python
 a = [1, 2, 2, 3, 5, 7, 1, 1, 1]
 print(max(set(a), key=a.count))
@@ -64,7 +64,7 @@ print(sorted(d.items(), key=itemgetter(1)))
 print(sorted(d, key=d.get))
 ```
 
-###For Else
+### For Else
 ```python
 a = [1, 23, 34, 5, 4]
 for el in a:
@@ -74,7 +74,7 @@ else:
     print('did not break the loop.')
 ```
 
-###转换列表为逗号分割格式
+### 转换列表为逗号分割格式
 ```python
 items = ['foo', 'bar', 'xyz']
 print(','.join(items))
@@ -87,7 +87,7 @@ d1 = {'a':1}
 d2 = {'b':2}
 d1.update(d2)
 ```
-###列表中最大值和最小值的索引
+### 列表中最大值和最小值的索引
 ```python
 lst = [40, 10, 20 ,30]
 def minIndex(lst):
