@@ -105,4 +105,22 @@ from collections import OrderedDict
 items = ["foo", "bar", "bar", "foo"]
 print(list(OrderedDict.fromkeys(items).keys()))
 ```
+### 找出一个元素在列表中出现的下标
+```python
+def getAllIndices(element, alist):
+    """
+    Find the index of an element in a list. The element can appear multiple times.
+    input:  alist - a list
+            element - objective element
+    output: index of the element in the list
+    """
+    result = []
+    offset = -1
+    while True:
+        try:
+            offset = alist.index(element, offset + 1)
+        except ValueError:
+            return result
+        result.append(offset)
+```
 
